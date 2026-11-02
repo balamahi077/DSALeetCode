@@ -6,10 +6,9 @@ class Solution {
 
         for(int i = 0; i < words.length; i++)
         {
-            String word = words[i];
-            for(int j = 0; j < word.length(); j++)
+            for(int j = 0; j < words[i].length(); j++)
             {
-                if(word.charAt(j) == x)
+                if(words[i].charAt(j) == x)
                 {
                     arr.add(i);
                     break;
