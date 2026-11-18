@@ -30,18 +30,16 @@ class Solution {
 
     public static int findSymbolIdxValue(char c)
     {
-        char[] romanSymbol = {'I','V','X','L','C','D','M'};
-        int[] romanSymbolValue = {1,5,10,50,100,500,1000};
-
-        int idx = -1;
-        for(int i = 0; i < romanSymbol.length; i++)
-        {
-            if(c == romanSymbol[i])
-            {
-                idx = i;
-                break;
-            }
+        switch(c) {
+            case 'I': return 1;
+            case 'V': return 5;
+            case 'X': return 10;
+            case 'L': return 50;
+            case 'C': return 100;
+            case 'D': return 500;
+            case 'M': return 1000;
         }
-        return romanSymbolValue[idx];
+
+        return 0;
     }
 }
